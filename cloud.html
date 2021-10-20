@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>CLOUD</h1>
+    <div class="container-fluid">
+
+        <br />
+        <div class="row">
+            <div class="col-2">
+                <label for="id">ID</label>
+                <input class="form-control form-control-lg" type="number" placeholder="#" id="id">
+            </div>
+            <div class="col-2">
+                <label for="brand">Brand</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Oracle" id="brand">
+            </div>
+            <div class="col-2">
+                <label for="model">Model</label>
+                <input class="form-control form-control-lg" type="number" placeholder="2012" id="model">
+            </div>
+            <div class="col-2">
+                <label for="category_id">Category_Id</label>
+                <input class="form-control form-control-lg" type="number" placeholder="2" id="category_id">
+            </div>
+            <div class="col-2">
+                <label for="name">Name</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Pedro Ramirez" id="name">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-1" id="form">
+                <button type="button" class="btn btn-outline-success w-100 btn-block" onclick="crear()"
+                    id="btnCrear">Create</button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn btn-outline-warning" onclick="actualizar()"
+                    id="btnActualizar">Upgrade</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-1">
+                <a href="index.html" target="_blank"> <button type="button" class="btn btn-outline-primary"
+                        id="btnClient">Client</button> </a>
+            </div>
+            <div class="col-1">
+                <a href="messages.html" target="_blank"> <button type="button" class="btn btn-outline-success w-100 btn-block"
+                        id="btnMessage">Message</button></a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>brand</th>
+                        <th>model</th>
+                        <th>category_id</th>
+                        <th>name</th>
+                        <th colspan="2">Accion</th>
+                    </tr>
+                </thead>
+                <tbody class="cuerpo" id="contenidoTabla">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="js/appcloud.js"></script>
+</body>
+
+</html>
